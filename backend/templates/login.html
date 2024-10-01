@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<style>
+    .title{
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        margin-top:50px;
+        text-align: center;
+        height:100px;
+    }
+    .image{
+        margin-left: 50px;
+        display:inline-block;
+        box-shadow:10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    .login{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: top;
+        margin-left:450px;
+       
+        
+       
+    }
+   
+    .username{
+        margin-top: none;
+    }
+    #username,#password,#button,.a ,#username-error{
+        align-items: center;
+        margin-bottom: 20px;
+        height: 50px;
+        width:200px;
+        margin-left:450px;
+        vertical-align: top;
+        
+    }
+    #button{
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+    .block{
+        display: grid;
+        grid-template-columns: 400px 400px;
+       
+    }
+    .button:hover{
+       background-color: white;
+       color: black;
+    }
+    body {  
+        
+      
+        background-size: cover; /* Cover ensures the image covers the whole background */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+</style>
+<title>
+    ps
+</title>
+</head>
+<body style="background-image: url('https://plus.unsplash.com/premium_photo-1681276170683-706111cf496e?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <p class="title">
+        "DesignGen: Harnessing AI for Custom Pattern Creation"
+    </p>
+    
+    <div class="block">
+        
+        <div class="b">
+            <form id="login-form" action="/" method="POST">
+                <input id="username" name="username" type="text" placeholder="Enter username" required>
+                <span id="username-error" class="error"></span>
+                <input id="password" name="password" type="password" placeholder="Enter password" required>
+                <span id="password-error" class="error"></span>
+                <a href="signup.html" class="a">Signup?</a>
+                <button id="button" type="submit">Login</button>
+            </form>  
+        </div>
+    </div>
+</body>
+        <script>
+                
+document.addEventListener('DOMContentLoaded', function () {
+    const usernameInput = document.getElementById('username');
+            
+                        // Function to validate username
+        function validateUsername() {
+            const username = usernameInput.value;
+            const usernamePattern = /^[A-Za-z]*$/; // Matches only letters
+            
+            if (username && !usernamePattern.test(username)) {
+                alert('Username should only contain letters.');
+                usernameInput.focus(); // Focus back to username input
+                            }
+                        }
+            
+                        // Add event listener for input event
+                    usernameInput.addEventListener('input', validateUsername);
+                    });
+
+               
+            
+    
+              
+                  
+document.addEventListener('DOMContentLoaded', function () {
+    const passwordInput = document.getElementById('password');
+                
+                            // Function to validate password
+            function validatePassword() {
+                const password = passwordInput.value;
+                const passwordPattern = /^[A-Za-z0-9]*$/; // Allows only letters and numbers
+                
+                    if (!passwordPattern.test(password)) {
+                        alert('Password should not contain special characters.');
+                        passwordInput.focus(); // Focus back to password input
+                                }
+                            }
+                
+                            // Add event listener for input event
+                     passwordInput.addEventListener('input', validatePassword);
+                        });
+document.getElementById('button').addEventListener('click',function(){
+   
+    window.location.href = 'pic.html';
+});         
+        </script>
+</html>

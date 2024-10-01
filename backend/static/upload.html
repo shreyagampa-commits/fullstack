@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #button{
+            border-radius: 10px;
+           margin-top: 20px;
+           margin-left: 650px;
+           height: 40px;
+           width:100px;
+           background-color:plum ;
+           color: black;
+        }
+        #fileInput,#div {
+            width: 200px; /* Set the width of the file input box */
+            padding: 5px; 
+            margin-top: 20px;
+           margin-left: 650px;
+           
+            /* Optional: Add some padding for better appearance */
+        }
+        .a{
+            text-align: center;
+            font-size: 30px;
+            
+            margin-top: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .m{
+            border: 10px;
+        }
+        .label{
+        font-size: 70px;
+        font-family: 'Montserrat', sans-serif;
+        color:plum ;
+       
+        text-align: center;
+        height:100px;
+        margin-bottom: 100px;
+    }
+    #button:hover{
+        background-color: white;
+        color: black;
+     }
+     body{
+        background-image: url('\image\pic2.png');
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        padding:30px;
+     }
+     .m{
+        box-shadow: inset;
+     }
+     
+        
+       
+        
+     </style>
+</head>
+<body>
+    <div style="background-image: url('/image/pic2.png')">
+        <div class="label">
+            <b>Design Pattern Generation!</b>
+        </div>
+        <b class="a">"Bring your ideas to life! Upload your jewelry design."</b>
+        <div class="m">
+            <b>Upload Image</b>
+        </div>
+        <div>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="image" accept="image/*" required>
+                <button type="submit" id="button">Submit</button>
+                
+            </form>
+        </div>
+        <div id="div"></div>
+    </div>
+    </body>
+    <script>
+        document.getElementById("button").addEventListener('click',function(){
+            const a = document.createElement('img');
+            
+            b=document.getElementById("fileInput").files[0];
+            a.src=URL.createObjectURL(b);
+            document.getElementById('div').appendChild(a);
+            a.style.display='block'
+            a.style.width='500px';
+            a.style.height='500px';
+            
+
+            
+            
+        });
+
+
+    </script>
+    
+</body>
+</html>

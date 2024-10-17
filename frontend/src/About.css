@@ -1,0 +1,33 @@
+#about{
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 100px;
+   
+}
+body{
+   background-image: url('Screenshot 2024-08-22 132733.png');
+    background-size: cover; /* Cover ensures the image covers the whole background */
+ background-position: center; /* Centers the image */
+ background-repeat: no-repeat; 
+
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#a,#c{           font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+  
+}
+#b,#d,#e,#f{
+    line-height: 8px;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+}
+#c{
+    margin-top: 10px;
+}

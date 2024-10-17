@@ -1,0 +1,13 @@
+.upload-background {
+    background-image: url('./uploadpic.png'); /* Adjust this path based on your directory structure */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Ensure the div covers the full height of the viewport */
+    display: flex; /* Centering the content */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    color: white; /* Example text color */
+  }
+  
